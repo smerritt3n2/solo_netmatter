@@ -1,0 +1,250 @@
+
+* {
+    color:white;
+    font-family: 'Roboto';
+}
+
+body {
+    margin:0;
+}
+
+small {
+    font-size:10.5px;
+}
+
+button {
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/*================================ Header Area ================================*/
+
+.h-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-evenly;
+    i {
+        margin-right: 10px;
+        font-size:20px;
+    }
+    form {
+        margin-left: 25px;
+        display:flex; 
+        .btn-search {
+            background-color: #999aa2;
+            width:50px;
+            &:hover{
+                background-color: #717277;
+            }
+        }
+        i {
+            margin-right: 0;
+        }
+    }
+}
+
+.r-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.btn-contact {
+    width: 150px;
+    background-color: #999aa2;
+    margin-left: 25px;
+    font-size: 18px;
+    &:hover{
+        background-color: #717277;
+    }
+}
+
+.btn-support {
+    width: 150px;
+    background-color: #427fd3;
+    margin-left: 25px;
+    font-size: 18px;
+    &:hover{
+        background-color: #1d63c5;
+    }
+}
+
+.btn-menu {
+    background-color: #333544;
+    margin-left: 25px;
+    i {
+        display: block;
+        margin: auto;
+    }
+    &:hover{
+        background-color: #262730;
+    }
+}
+
+/*=============================================================================*/
+
+/*================================ Navbar Area ================================*/
+
+.n-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #333544;
+      i {
+        display: block;
+        margin: auto;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+      }
+      
+      li {
+        width: 195px;
+        display: block;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-left: 1px solid rgba(255,255,255,0.1);
+        border-right: 1px solid rgba(0,0,0,0.25);
+      }
+      
+      li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dd-web-design {background-color: rgb(111, 57, 139);}
+      .dd-it-support {background-color: #1654aa;}
+      .dd-telecoms-services {background-color: rgb(170, 42, 38);}
+      .dd-bespoke-software {background-color: rgb(64, 89, 119);}
+      .dd-digital-marketing {background-color: rgb(1, 117, 69);}
+      .dd-cyber-security {background-color: rgb(196, 25, 62);}
+} 
+
+.code {
+    margin-left: 45px;
+    i {
+        color: #986DAF;
+    }
+    &:hover{
+        i {color:white;}
+        background-color:#986DAF;
+    }
+}
+
+.desktop {
+    i {
+        color: #427fd3;
+    }
+    &:hover{
+        i {color:white;}
+        background-color:#427fd3;
+    }
+}
+
+.phone {
+    i {
+        color: #DF4A45;
+        transform: rotate(-45deg);
+    }
+    &:hover{
+        i {color:white;}
+        background-color:#DF4A45;
+    }
+}
+
+.keypad {
+    i {
+        color: #667F9D;
+    }
+    &:hover{
+        i {color:white;}
+        background-color:#667F9D;
+    }
+}
+
+.signal {
+    i {
+        color: #00CD76;
+    }
+    &:hover{
+        i {color:white;}
+        background-color:#00CD76;
+    }
+}
+
+.shield {
+    margin-right: 45px;
+    i {
+        color: #FF2E5B;
+    }
+    &:hover{
+        i {color:white;}
+        background-color:#FF2E5B;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 10px;
+    li {
+        border: none;
+    }
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*=============================================================================*/
+
+  /*============================= Slideshow Area ================================*/
+
+.sls-container {
+    display: flex;
+    height: 730px;
+    background: url(../img/slideshow1.jpeg) no-repeat center / cover;
+}
+
+.sls-content-container {
+    margin: auto 30px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    button {
+        width: 200px;
+        height: 50px;
+        background: #986DAF;
+        font-size: 15px;;
+        &:hover{
+            background-color: rgb(102, 70, 119);
+        }
+    }
+    i {
+        margin-left: 18px;
+    }
+}
+
+  /*=============================================================================*/
+
+  /*============================= Slideshow Area ================================*/
+
