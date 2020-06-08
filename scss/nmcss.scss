@@ -1,7 +1,13 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 
 * {
     color:white;
     font-family: 'Roboto';
+    font-weight: 100;
 }
 
 body {
@@ -95,6 +101,8 @@ button {
     align-items: center;
     text-align: center;
     background: #333544;
+    padding-left: 45px;
+    padding-right: 45px;
       i {
         display: block;
         margin: auto;
@@ -109,16 +117,15 @@ button {
       }
       
       li {
-        width: 195px;
+        width: 100%;
         display: block;
         font-size: 1.2em;
-        text-decoration: none;
         border-left: 1px solid rgba(255,255,255,0.1);
-        border-right: 1px solid rgba(0,0,0,0.25);
+        border-right: 1px solid rgba(145, 111, 111, 0.25);
       }
       
       li a {
-        display: block;
+        display: inline-block;
         padding: 14px 16px;
         text-decoration: none;
       }
@@ -126,14 +133,13 @@ button {
 } 
 
 .dd-web-design {background-color: rgb(111, 57, 139);}
-.dd-it-support {background-color: #1654aa;}
+.dd-it-support {background-color: rgb(50, 99, 167);}
 .dd-telecoms-services {background-color: rgb(170, 42, 38);}
 .dd-bespoke-software {background-color: rgb(64, 89, 119);}
 .dd-digital-marketing {background-color: rgb(1, 117, 69);}
 .dd-cyber-security {background-color: rgb(196, 25, 62);}
 
 .code {
-    margin-left: 45px;
     i {
         color: #986DAF;
     }
@@ -185,7 +191,7 @@ button {
 }
 
 .shield {
-    margin-right: 45px;
+
     i {
         color: #FF2E5B;
     }
@@ -197,7 +203,7 @@ button {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: contents;
   }
   
   .dropdown-content {
@@ -205,10 +211,17 @@ button {
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    font-size: 10px;
+    font-size: 12px;
+    width: 100%;
+    top: 20%;
+    left: 0;
+    li:before {
+        content: "-";
+    }
     li {
         border: none;
     }
+
   }
   
   .dropdown:hover .dropdown-content {
@@ -223,10 +236,11 @@ button {
     display: flex;
     height: 730px;
     background: url(../img/slideshow1.jpeg) no-repeat center / cover;
+    margin-bottom: 2%;
 }
 
 .content-container {
-    margin: auto 30px;
+    margin: 30px;
     font-size: x-large;
     display: flex;
     flex-direction: column;
@@ -251,7 +265,7 @@ button {
 
   .subject-container {
     display: flex;
-    padding: 1%;
+    padding: 0.5%;
     i {
         background: grey;
         padding: 20px;
@@ -268,64 +282,79 @@ button {
         height: 35px;
         font-size: 16px;
     }
+    hr {
+        border: 2px solid black;
+        width: 30px;
+    }
     .id-bs{
-        i {background-color: rgb(64, 89, 119);}
+        i {background-color: #667F9D;}
+        button {background-color: #667F9D;}
         &:hover {
-            background-color: rgb(64, 89, 119);
+            background-color: #667F9D;
             cursor: pointer;
-            h2, p, hr {color:white;}
-            button {background-color: white; color: rgb(64, 89, 119);}
-            i {background-color: white; color: rgb(64, 89, 119);}
+            h2, p {color:white;}
+            hr {border: 2px solid white;}
+            button {background-color: white; color: #667F9D;}
+            i {background-color: white; color: #667F9D;}
         }
     }
     .id-is{
-        i {background-color: #1654aa;}
+        i {background-color: #427FD3;}
         &:hover {
-            background-color: #1654aa;
+            background-color: #427FD3;
             cursor: pointer;
-            h2, p, hr {color:white;}
-            button {background-color: white; color: #1654aa;}
-            i {background-color: white; color: #1654aa;}
+            h2, p {color:white;}
+            hr {border: 2px solid white;}
+            button {background-color: white; color: #427FD3;}
+            i {background-color: white; color: #427FD3;}
         }
     }
     .id-dm{
-        i {background-color: rgb(1, 117, 69);}
+        i {background-color: #00CD76;}
+        button {background-color:#00CD76}
         &:hover {
-            background-color: rgb(1, 117, 69);
+            background-color: #00CD76;
             cursor: pointer;
-            h2, p, hr {color:white;}
-            button {background-color: white; color: rgb(1, 117, 69);}
-            i {background-color: white; color: rgb(1, 117, 69);}
+            h2, p {color:white;}
+            hr {border: 2px solid white;}
+            button {background-color: white; color: #00CD76;}
+            i {background-color: white; color: #00CD76;}
         }
     }
     .id-ts{
-        i {background-color: rgb(170, 42, 38); transform: rotate(-45deg)}
+        i {background-color: #DF4A45; transform: rotate(-45deg)}
+        button {background-color: #DF4A45}
         &:hover {
-            background-color: rgb(170, 42, 38);
+            background-color: #DF4A45;
             cursor: pointer;
-            h2, p, hr {color:white;}
-            button {background-color: white; color: rgb(170, 42, 38);}
-            i {background-color: white; color: rgb(170, 42, 38);}
+            h2, p {color:white;}
+            hr {border: 2px solid white;}
+            button {background-color: white; color: #DF4A45;}
+            i {background-color: white; color: #DF4A45;}
         }
     }
     .id-wd{
-        i {background-color: rgb(111, 57, 139);}
+        i {background-color: #986DAF;}
+        button {background-color: #986DAF}
         &:hover {
-            background-color: rgb(111, 57, 139);
+            background-color: #986DAF;
             cursor: pointer;
-            h2, p, hr {color:white;}
-            button {background-color: white; color: rgb(111, 57, 139);}
-            i {background-color: white; color: rgb(111, 57, 139);}
+            h2, p {color:white;}
+            hr {border: 2px solid white;}
+            button {background-color: white; color: #986DAF;}
+            i {background-color: white; color: #986DAF;}
         }
     }
     .id-cs{
-        i {background-color: rgb(196, 25, 62);}
+        i {background-color: #FF2E5B;}
+        button {background-color: #FF2E5B;}
         &:hover {
-            background-color: rgb(196, 25, 62);
+            background-color: #FF2E5B;
             cursor: pointer;
-            h2, p, hr {color:white;}
-            button {background-color: white; color: rgb(196, 25, 62);}
-            i {background-color: white; color: rgb(196, 25, 62);}
+            h2, p {color:white;}
+            hr {border: 2px solid white;}
+            button {background-color: white; color: #FF2E5B;}
+            i {background-color: white; color: #FF2E5B;}
         }
     }
   }
@@ -334,8 +363,10 @@ button {
     margin: 15px 15px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0px 0px 43px -1px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 43px -1px rgba(0,0,0,0.4);
     border-radius: 3px;
+    border-style: groove;
+    border-width: 2px;
   }
 
   .row1 {
@@ -354,8 +385,7 @@ button {
 
   .banner-container {
       display:flex;
-      height: 515px;
-      padding: 1%;
+      height: auto;
       background: url(../img/banner.png) no-repeat center / cover;
       background-color: #333544;
       .content-container {
@@ -382,16 +412,19 @@ button {
   .latest-container {
       display: flex;
       flex-direction: row;
+      background-image: linear-gradient(180deg, rgba(208,206,206,1) 0%, rgba(255, 255, 255,1) 34%);
+      padding: 2% 0%;
   }
 
   .latest-content {
     display: flex;
     flex-direction: column;
-    width: 33.33%;
+    width: 29%;
+    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 0px 43px -1px rgba(0,0,0,0.40);
-      h3, p, hr {color: black;}
+    background-color:white;
+      a, hr, b {color: black;}
   }
 
   .latest-img {
@@ -407,8 +440,205 @@ button {
             opacity: 0.7;
         }
       }
+      p {
+        position: absolute;
+        margin-left: 322px;
+        width: 45px;
+        height: 20px;
+        font-size: smaller;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline
+        }
+      }
+  }
+
+  .details-container {
+      padding: 20px;
+      border: groove;
+      border-top: none;
+      p {color:black;}
+      hr {margin-top: 20px;margin-bottom: 20px;}
+      button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 40%;
+        height: 45px;
+        font-size: inherit;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+      }
+      .dd-bespoke-software:hover {background-color: rgb(43, 65, 92);}
+      .dd-it-support:hover {background-color: rgb(50, 101, 172);}
+      .dd-web-design:hover {background-color: rgb(96, 41, 124);}
   }
 
   .posted-container {
       display: flex;
+      img {width: 50px;height: 50px;border-radius: 40px;padding: 10px;}
+      p {margin-left: 20px;}
   }
+
+  .underline-b {
+    width: fit-content;
+    margin-left: 5%;
+    hr {
+      border: solid;
+    }
+  }
+
+  /*=============================================================================*/
+
+  /*============================== Client Area ==================================*/
+
+  .client-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(180deg, rgba(208,206,206,1) 0%, rgba(255, 255, 255,1) 34%);
+    max-height: 170px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .busseys {
+    width: 188px;height: 70px;
+    background: url(../img/clients/busseys_original.jpg) no-repeat;
+  }
+
+  .crane {
+    width: 287px;height: 70px;
+    background: url(../img/clients/crane_original.jpg) no-repeat;
+  }
+
+  .beat {
+    width: 72px;height:70px;
+    background: url(../img/clients/beat_original.jpg) no-repeat;
+  }
+
+  .northern {
+    width: 322px;height:70px;
+    background: url(../img/clients/northern_original.jpg) no-repeat;
+  }
+
+ .busseys:hover {background: url("../img/clients/busseys_new.png") no-repeat;}
+ .crane:hover {background: url("../img/clients/crane_new.png") no-repeat;}
+ .beat:hover {background: url("../img/clients/beat_new.png") no-repeat;}
+ .northern:hover {background: url("../img/clients/northern_new.png") no-repeat;}
+
+ .tooltip {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    span {
+        width: 260px;
+    }
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #333544;
+    color: #fff;
+    text-align: center;
+    padding: 8%;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    font-size: small;
+    hr {
+        border: 2px solid white;
+        width: 30px;
+    }
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+   /*=============================================================================*/
+
+  /*=============================== Footer Area ==================================*/
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #333544;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .col-1, .col-2, .col-3, .col-4 {
+    a {
+        text-decoration: none;
+        &:hover {text-decoration: underline;}
+      }
+    li {list-style-type: none;}
+    ul {padding: 0;font-size: 15px;}
+  }
+
+  .col-4 button {
+    width: 145px;
+    height: 65px;
+    margin: 10px 10px 10px 0;
+    background-color: #252731;
+  }
+
+  .col-4 {
+      max-width: 320px;
+      i {font-size: xx-large;}
+  }
+
+  .facebook:hover {background-color: #3b5998;}
+  .twitter:hover {background-color: #00acee;}
+  .in:hover {background-color: #0e76a8;}
+
+  /*==============================================================================*/
+
+  /*============================ Sub-Client Area =================================*/
+
+  .google {
+    width: 220px;height: 70px;
+    background: url(../img/clients/google_original.jpg) no-repeat;
+  }
+
+  .smp {
+    width: 115px;height: 70px;
+    background: url(../img/clients/smp_original.jpg) no-repeat;
+  }
+
+  .future50 {
+    width: 44px;height:70px;
+    background: url(../img/clients/future50_original.jpg) no-repeat;
+  }
+
+  .qms {
+    width: 60px;height:70px;
+    background: url(../img/clients/qms_original.jpg) no-repeat;
+  }
+
+  .carbon {
+    width: 175px;height:70px;
+    background: url(../img/clients/carbon_original.jpg) no-repeat;
+  }
+
+ .future50:hover {background: url("../img/clients/future50_new.jpg") no-repeat;}
+ .qms:hover {background: url("../img/clients/qms_new.jpg") no-repeat;}
+ .carbon:hover {background: url("../img/clients/carbon_new.jpg") no-repeat;}
