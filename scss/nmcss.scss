@@ -1,47 +1,57 @@
+/*=============================================================================*/
+/* Global Elements, Providing Style to all Area's of Website
+/*=============================================================================*/
+
+/* Sets Web-page to maximum Width + Height of Window screen */
 html {
     width: 100%;
     height: 100%;
 }
 
-
+/* Sets main colour to white + Coverts all text-font to "Roboto" */
 * {
     color:white;
     font-family: 'Roboto';
     font-weight: 100;
 }
 
+/* Sets margin in body to 0, So that no random margin elements are added */
 body {
     margin:0;
 }
 
+/* Creating a Value that will set Text elements to correct size */
 small {
     font-size:10.5px;
 }
 
+/* Applies a Style to all Buttons to create a soft edge + makes cursor change to pointer */
 button {
     border-radius: 3px;
     border: none;
     cursor: pointer;
 }
 
-/*================================ Header Area ================================*/
+/*=============================================================================*/
+/* Header Area
+/*=============================================================================*/
 
-.h-container {
+.h-container { /* Holds together all Header Elements in a Row */
     display: flex;
     flex-direction: row;
     padding: 10px;
     justify-content: space-evenly;
-    i {
-        margin-right: 10px;
+    i { /* Adding Style to i element */
+        margin-right: 10px; 
         font-size:20px;
     }
-    form {
+    form { /* Converts "Form" into a container */
         margin-left: 25px;
         display:flex; 
-        .btn-search {
+        .btn-search { /* Adding Style to Button */
             background-color: #999aa2;
             width:50px;
-            &:hover{
+            &:hover{ /* Creates a Hovering Event */
                 background-color: #717277;
             }
         }
@@ -51,19 +61,19 @@ button {
     }
 }
 
-.r-container {
-    display: flex;
+.r-container { /* Holds together all elements together in a Row */
+    display: flex; 
     flex-direction: row;
     margin: 10px;
     justify-content: space-between;
 }
 
-.btn-contact {
-    width: 150px;
+.btn-contact { /* Creates a Style to Button */
+    width: 150px; 
     background-color: #999aa2;
     margin-left: 25px;
     font-size: 18px;
-    &:hover{
+    &:hover{ /* Hover Event: Change Buttons Colour */
         background-color: #717277;
     }
 }
@@ -78,24 +88,27 @@ button {
     }
 }
 
-.btn-menu {
-    background-color: #333544;
+.btn-menu { /* Creates a Style to Button (Just Displays Icon) */
+    background-color: #333544; 
     margin-left: 25px;
     i {
         display: block;
         margin: auto;
     }
-    &:hover{
+    &:hover{ /* Hover Event: Change Buttons Colour */
         background-color: #262730;
     }
 }
-
+/*=============================================================================*/
 /*=============================================================================*/
 
-/*================================ Navbar Area ================================*/
 
-.n-container {
-    padding: 0;
+/*=============================================================================*/
+/* Navbar Area
+/*=============================================================================*/
+
+.n-container { /* Holds together all Navigational Bar elements */
+    padding: 0; 
     margin: 0;
     display: flex;
     align-items: center;
@@ -103,11 +116,11 @@ button {
     background: #333544;
     padding-left: 45px;
     padding-right: 45px;
-      i {
+      i { /* Adding Style to i element */
         display: block;
         margin: auto;
       }
-      ul {
+      ul { /* Creates a Style to Navigational Bar Elements */
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -115,7 +128,7 @@ button {
         display: flex;
         flex-direction: row;
       }
-      
+       
       li {
         width: 100%;
         display: block;
@@ -128,10 +141,11 @@ button {
         display: inline-block;
         padding: 14px 16px;
         text-decoration: none;
-      }
+      } /*==============================================*/
 
 } 
 
+/* Creates a Colour Class for Dropdown-Menus to use */
 .dd-web-design {background-color: rgb(111, 57, 139);}
 .dd-it-support {background-color: rgb(50, 99, 167);}
 .dd-telecoms-services {background-color: rgb(170, 42, 38);}
@@ -139,7 +153,7 @@ button {
 .dd-digital-marketing {background-color: rgb(1, 117, 69);}
 .dd-cyber-security {background-color: rgb(196, 25, 62);}
 
-.code {
+.code { /* Gives Icons a Colour and Changes there Colour on Hover Events */
     i {
         color: #986DAF;
     }
@@ -201,12 +215,12 @@ button {
     }
 }
 
-.dropdown {
+.dropdown { /* Tells Child Element to NOT create new Resources, Use Current Resources */
     position: relative;
     display: contents;
   }
   
-  .dropdown-content {
+  .dropdown-content { /* Creates a Style for Dropdown-Menus & Hides Itself */
     display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -215,7 +229,7 @@ button {
     width: 100%;
     top: 20%;
     left: 0;
-    li:before {
+    li:before { /* Before Dropdowns are Generated, In Container create the symbol - */
         content: "-";
     }
     li {
@@ -224,33 +238,36 @@ button {
 
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content { /* Hover Event: Reveal Itself */
     display: block;
   }
-
+  /*=============================================================================*/
   /*=============================================================================*/
 
-  /*============================= Slideshow Area ================================*/
 
-.sls-container {
-    display: flex;
+  /*=============================================================================*/
+  /* Slideshow Area
+  /*=============================================================================*/
+
+.sls-container { /* Holds together all Slideshow Elements + Applies Image as Background */
+    display: flex; 
     height: 730px;
     background: url(../img/slideshow1.jpeg) no-repeat center / cover;
     margin-bottom: 2%;
 }
 
-.content-container {
-    margin: 30px;
+.content-container { /* Holds together all Content Elements in a Column */
+    margin: 30px; 
     font-size: x-large;
     display: flex;
     flex-direction: column;
     z-index: 2;
-    button {
-        width: 200px;
+    button { /* Creates a Style to Button */
+        width: 200px; 
         height: 50px;
         background: #986DAF;
         font-size: 15px;;
-        &:hover{
+        &:hover{ /* Hover Event: Change Buttons Colour */
             background-color: rgb(102, 70, 119);
         }
     }
@@ -258,38 +275,41 @@ button {
         margin-left: 18px;
     }
 }
-
+  /*=============================================================================*/
   /*=============================================================================*/
 
-  /*============================== Gallary Area =================================*/
 
-  .subject-container {
-    display: flex;
+  /*=============================================================================*/
+  /* Gallary Area
+  /*=============================================================================*/
+
+  .subject-container { /* Holds together all Subject Elements */
+    display: flex; 
     padding: 0.5%;
-    i {
-        background: grey;
+    i { /* Creates a Style to Icons */
+        background: grey; 
         padding: 20px;
         border-radius: 50%;
     }
-    h2 {
+    h2 { /* Creates a Style to h2 Text */
         color:black;
     }
-    p {
+    p { /* Creates a Style to Paragraphs */
         color:black;
     }
-    button {
+    button { /* Creates a Style to Button */
         width: 50%;
         height: 35px;
         font-size: 16px;
     }
-    hr {
+    hr { /* Creates a Style to HR (Underlines) */
         border: 2px solid black;
         width: 30px;
     }
-    .id-bs{
+    .id-bs{ /* Provides Colour to Icon + Button */
         i {background-color: #667F9D;}
         button {background-color: #667F9D;}
-        &:hover {
+        &:hover { /* Hover Event: Changes Icon, Title, Text and Button Colour */
             background-color: #667F9D;
             cursor: pointer;
             h2, p {color:white;}
@@ -359,7 +379,7 @@ button {
     }
   }
 
-  .sb-container{
+  .sb-container{ /* Holds together all Elements + Applies Style to them*/
     margin: 15px 15px;
     padding: 30px;
     text-align: center;
@@ -369,19 +389,22 @@ button {
     border-width: 2px;
   }
 
-  .row1 {
+  .row1 { /* Creates a Container that holds data in a row only */
     display: flex;
     flex-direction: row;
   }
 
-  .row2 {
+  .row2 { /* Creates a Container that holds data in a row only */
     display: flex;
     flex-direction: row;
   }
-
+  /*=============================================================================*/
   /*=============================================================================*/
 
-  /*============================== Banner Area ==================================*/
+
+  /*=============================================================================*/
+  /* Banner Area
+  /*=============================================================================*/
 
   .banner-container {
       display:flex;
