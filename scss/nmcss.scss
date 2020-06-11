@@ -283,7 +283,7 @@ button {
   /* Gallary Area
   /*=============================================================================*/
 
-  .subject-container { /* Holds together all Subject Elements */
+  .subject-container { /* Holds together all Gallary Elements */
     display: flex; 
     padding: 0.5%;
     i { /* Creates a Style to Icons */
@@ -406,19 +406,19 @@ button {
   /* Banner Area
   /*=============================================================================*/
 
-  .banner-container {
+  .banner-container { /* Holds together all Banner Elements */
       display:flex;
       height: auto;
       background: url(../img/banner.png) no-repeat center / cover;
       background-color: #333544;
-      .content-container {
+      .content-container { /* Holds together all Content inside Banner Elements */
         font-size: medium;
         width:40%;
-        button {
+        button { /* Creates a Style to Button */
             color:black;
             background-color:white;
             width: 30%;
-            &:hover{
+            &:hover{ /* Hover Event: Changes Button Colour */
                 background-color: gainsboro;
             }
         }
@@ -427,19 +427,22 @@ button {
         }
       }
   }
-
+  /*=============================================================================*/
   /*=============================================================================*/
 
-  /*============================== Latest Area ==================================*/
+
+  /*=============================================================================*/
+  /* Latest Area
+  /*=============================================================================*/
   
-  .latest-container {
+  .latest-container { /* Holds together all Latest Elements + Adds Image as Background */
       display: flex;
       flex-direction: row;
       background-image: linear-gradient(180deg, rgba(208,206,206,1) 0%, rgba(255, 255, 255,1) 34%);
       padding: 2% 0%;
   }
 
-  .latest-content {
+  .latest-content { /* Holds together all Latest Elements within a Column + Applies a Black Colour to Elements */
     display: flex;
     flex-direction: column;
     width: 29%;
@@ -450,21 +453,21 @@ button {
       a, hr, b {color: black;}
   }
 
-  .latest-img {
-      overflow:hidden;
+  .latest-img { /* Creates a Container that Holds Image Elements + */
+      overflow:hidden; /* Hides Elements if they go outside the Container */
       background:white;
       direction: rtl;
-      img {
+      img { /* Creates a Style to Images + Applies an Animation to its Elements */
         width:100%;
         transition: transform .5s ease, opacity .5s ease;
         border-radius: 3px;
-        &:hover {
+        &:hover { /* Hover Event: Zooms into Image + Makes background slightly White */
             transform: scale(1.1);
             cursor: pointer;
             opacity: 0.7;
         }
       }
-      p {
+      p { /* Creates a Style to Paragraphs */
         position: absolute;
         width: 45px;
         height: 20px;
@@ -477,50 +480,54 @@ button {
       }
   }
 
-  .details-container {
+  .details-container { /* Holds together all Content inside Latest Element */
       padding: 20px;
       border: groove;
       border-top: none;
       p {color:black;}
       hr {margin-top: 20px;margin-bottom: 20px;}
-      button {
+      button { /* Creates a Style to Button */
         margin-top: 20px;
         margin-bottom: 20px;
         width: 40%;
         height: 45px;
         font-size: inherit;
       }
-      a {
+      a { /* Removes Underlines from Text Element */
         text-decoration: none;
-        &:hover {
+        &:hover { /* Hover Event: Underline Text Element */
             text-decoration: underline;
         }
       }
+      /* Creates a Colour Class for News Icon to use */
       .dd-bespoke-software:hover {background-color: rgb(43, 65, 92);}
       .dd-it-support:hover {background-color: rgb(40, 82, 141);}
       .dd-web-design:hover {background-color: rgb(96, 41, 124);}
   }
-
-  .posted-container {
-      display: flex;
+  
+  .posted-container { /* Creates a Container for Posted Data in a Row + */
+      display: flex; /* Applies a Style to Image/ Paragraph */
       img {width: 50px;height: 50px;border-radius: 40px;padding: 10px;}
       p {margin-left: 20px;}
   }
 
-  .underline-b {
+  .underline-b { /* Creates a Style to HR Elements */
     width: fit-content;
     margin-left: 5%;
     hr {
       border: solid;
     }
   }
-
+  /*=============================================================================*/
   /*=============================================================================*/
 
-  /*============================== Client Area ==================================*/
 
-  .client-container {
-    display: flex;
+  /*=============================================================================*/
+  /* Client Area
+  /*=============================================================================*/
+
+  .client-container { /* Holds together all Client Elements + */
+    display: flex; /* Applies a Two Staged Colour Background (Top to Bottom) */
     flex-direction: row;
     justify-content: space-around;
     background-image: linear-gradient(180deg, rgba(208,206,206,1) 0%, rgba(255, 255, 255,1) 34%);
@@ -529,48 +536,45 @@ button {
     padding-bottom: 2%;
   }
 
-  .busseys {
+  .busseys { /* Applies Images to Container background */
     width: 188px;height: 70px;
     background: url(../img/clients/busseys_original.jpg) no-repeat;
   }
-
   .crane {
     width: 287px;height: 70px;
     background: url(../img/clients/crane_original.jpg) no-repeat;
   }
-
   .beat {
     width: 72px;height:70px;
     background: url(../img/clients/beat_original.jpg) no-repeat;
   }
-
   .northern {
     width: 322px;height:70px;
     background: url(../img/clients/northern_original.jpg) no-repeat;
   }
 
+  /* Hover Event: Changes Background Image to New Image */
  .busseys:hover {background: url("../img/clients/busseys_new.png") no-repeat;}
  .crane:hover {background: url("../img/clients/crane_new.png") no-repeat;}
  .beat:hover {background: url("../img/clients/beat_new.png") no-repeat;}
  .northern:hover {background: url("../img/clients/northern_new.png") no-repeat;}
 
- .tooltip {
+ .tooltip { /* Creates a Container + Spaces Elements Inside Evenly */
     position: relative;
     display: flex;
     justify-content: space-around;
     span {
-        width: 260px;
+        width: 160px;
     }
   }
   
-  .tooltip .tooltiptext {
+  .tooltip .tooltiptext { /* Hides Container that Holds Text Content */
     visibility: hidden;
     background-color: #333544;
     color: #fff;
     text-align: center;
     padding: 8%;
-    /* Position the tooltip */
-    position: absolute;
+    position: absolute; /* Position the Container Above Element */
     z-index: 1;
     bottom: 100%;
     font-size: small;
@@ -580,8 +584,8 @@ button {
     }
   }
 
-  .tooltip .tooltiptext::after {
-    content: "";
+  .tooltip .tooltiptext::after { /* Creates the Triangle Point in the Container + */
+    content: ""; /* Points the Triangle Down */
     position: absolute;
     top: 100%;
     left: 50%;
@@ -591,15 +595,18 @@ button {
     border-color: #555 transparent transparent transparent;
   }
   
-  .tooltip:hover .tooltiptext {
+  .tooltip:hover .tooltiptext { /* Hover Event: Reveal Hidden Container */
     visibility: visible;
   }
+  /*=============================================================================*/
+  /*=============================================================================*/
 
-   /*=============================================================================*/
 
-  /*=============================== Footer Area ==================================*/
+  /*=============================================================================*/
+  /* Footer Area
+  /*=============================================================================*/
 
-  .footer-container {
+  .footer-container { /* Holds together all Footer Elements + */
     display: flex;
     flex-direction: row;
     background-color: #333544;
@@ -608,36 +615,40 @@ button {
     padding-bottom: 2%;
   }
 
-  .col-1, .col-2, .col-3, .col-4 {
-    a {
+  .col-1, .col-2, .col-3, .col-4 { /* Creates a Style to Hyperlink & List Elements */
+    a { /* Removes Underlines from Text Element */
         text-decoration: none;
-        &:hover {text-decoration: underline;}
+        &:hover {text-decoration: underline;} /* Hover Event: Underline Text Element */
       }
     li {list-style-type: none;}
     ul {padding: 0;font-size: 15px;}
   }
 
-  .col-4 button {
+  .col-4 button { /* Applies Style to Button Elements in Col-4 Containers */
     width: 145px;
     height: 65px;
     margin: 10px 10px 10px 0;
     background-color: #252731;
   }
 
-  .col-4 {
+  .col-4 { /* Creates a Container that Will use a Certain amount of Space */
       max-width: 320px;
       i {font-size: xx-large;}
   }
 
+  /* Creates a Colour Class for Social Buttons to use */
   .facebook:hover {background-color: #3b5998;}
   .twitter:hover {background-color: #00acee;}
   .in:hover {background-color: #0e76a8;}
+  /*=============================================================================*/
+  /*=============================================================================*/
 
-  /*==============================================================================*/
 
-  /*============================ Sub-Client Area =================================*/
+  /*=============================================================================*/
+  /* Sub-Client Area
+  /*=============================================================================*/
 
-  .google {
+  .google { /* Applies Images to Container background */
     width: 220px;height: 70px;
     background: url(../img/clients/google_original.jpg) no-repeat;
   }
@@ -662,36 +673,43 @@ button {
     background: url(../img/clients/carbon_original.jpg) no-repeat;
   }
 
+  /* Hover Event: Changes Background Image to New Image */
  .future50:hover {background: url("../img/clients/future50_new.jpg") no-repeat;}
  .qms:hover {background: url("../img/clients/qms_new.jpg") no-repeat;}
  .carbon:hover {background: url("../img/clients/carbon_new.jpg") no-repeat;}
+  /*=============================================================================*/
+  /*=============================================================================*/
 
-   /*==============================================================================*/
 
-   /*=========================== Query Function ===================================*/
+  /*=============================================================================*/
+  /* Query Function
+  /*=============================================================================*/
 
+
+  /* Applies New Setting, Styles and Positions to Windows that are at 1440 Resolution */
   @media screen and (max-width: 1440px) {
-    .dropdown-content {
+    .dropdown-content { /* Adjusts Dropdown Position */
         top: 20%;
     } 
   }
 
-   @media screen and (max-width: 1024px) {
-    input {display: none;}
-    .dropdown-content {
+  /* Applies New Setting, Styles and Positions to Windows that are at 1024 Resolution */
+  @media screen and (max-width: 1024px) {
+    input {display: none;} /* Hides Text-Field */
+    .dropdown-content { /* Adjusts Dropdown Position + Changes Font-Size in Dropdown */
         font-size: 9px;
         top: 22%;
     }
     .subject-container {
-        button {
+        button { /* Adjusts Button Style */
          height: 47px;
          width: 130px;
         }
     }
-    .row1 {font-size: small;}
+    .row1 {font-size: small;} /* Changes Font Sizes */
     .row2 {
         flex-wrap: wrap;
-        .sb-container {
+        .sb-container { /* Adjusts Width of Containers in Gallary */
             max-width: 40%;
             margin-left: auto;
             margin-right: auto;
@@ -699,7 +717,7 @@ button {
         }
     }
     .banner-container {
-        .content-container {
+        .content-container { /* Adjust Font Sizes + Button Sizes */
             font-size: larger;
             width: 90%;
             button {
@@ -708,21 +726,17 @@ button {
             }
         }
     }
-    .last-news {display: none;}
-    .latest-img {p {margin-left: 382px;}}
-    .latest-content {width: 42%;}
-    .tooltip {
-        span {width: 160px;}
-      }
+    .last-news {display: none;} /* Hides Last Latest entry */
+    .latest-content {width: 42%;} /* Adjusts width of Container */
     .footer-container {
         flex-wrap: wrap;
         justify-content: end;
-        .col-1, .col-2, .col-3, .col-4 {
+        .col-1, .col-2, .col-3, .col-4 { /* Changes width inside Container */
             width: 400px;
             margin: 0px 45px;
         }
         .col-4 {
-            button {
+            button { /* Changes Button Style */
                 height: 40px;
                 width: 148px;
                 i {font-size: large;}
@@ -731,46 +745,51 @@ button {
     }
    }
 
-   @media screen and (max-width: 985px) {
-        input {display: block;}
-        nav {display: none;}
+  /* Applies New Setting, Styles and Positions to Windows that are at 985 Resolution */
+  @media screen and (max-width: 768px) {
+        input {display: block;} /* Reveals Text Field */
+        nav {display: none;} /* Hides Navigation bar with Dropdowns */
         .h-container {
             .r-container {
-                form {
+                form { /* Completes border on Text Field */
                     margin: 0px;
                     border-left: solid;
                 }
             }
         }
-       .btn-support {display: none;}
-       .btn-contact {display: none;}
-       .content-container {
+       .btn-support {display: none;} /* Hides Support Button */
+       .btn-contact {display: none;} /* Hides Contact Button */
+       .content-container { /* Centers Elements within Container */
            margin: auto;
            text-align: center;
            button {
                margin: 0px auto;
            }
        }
-       .subject-container {
+       .subject-container { /* Adjusts Elements to a Single Column in Gallary */
            margin: 0px auto;
            .row1 {display: block;}
        }
-       .banner-container {
+       .banner-container { /* Removes Images inside the Container */
            background-image: none;
-        .content-container {
+        .content-container { /* Adjusts Content + Buttons inside Container */
             font-size: larger;
             width: 90%;
             text-align: left;
             button {
-                width: 20%;
+                width: 24%;
                 margin: 0px;
+                margin-bottom: 20px;
                 }
             }
         }
-        .footer-container {
+        .footer-container { /* Adjusts Container, Col-4 + Button inside Footer elements */
             height: 600px;
             font-size: xx-large;
-            .col-4 {
+            .col-1, .col-2, .col-3, .col-4 {
+                width: auto;
+            }
+            .col-4 { /* Changes width/ height of buttons in Column 4 */
                 button {
                     height: 60px;
                     width: 145px;
@@ -778,40 +797,27 @@ button {
                 }
             }
         }
+        .client-container {
+            .busseys, .crane, .northern { /* Lowers Size of Images + Centers them */
+                background-size: 140px;
+                background-position: center;
+                margin: 10px;
+            }
+        }
+        .client-container { /* Lowers Size of Image + Centers them */
+            .beat {
+                background-size: 55px;
+                background-position: center;
+                margin: 10px;
+            }
+        }
     }
 
-   @media screen and (max-width: 768px) {
-    input {display: none;}
-    .banner-container {
-        .content-container {
-            button {width: 24%; margin-bottom: 20px;}
-        }
-    }
-    .client-container {
-        .busseys, .crane, .northern {
-            background-size: 140px;
-            background-position: center;
-            margin: 10px;
-        }
-    }
-    .client-container {
-        .beat {
-            background-size: 55px;
-            background-position: center;
-            margin: 10px;
-        }
-    }
-    .footer-container {
-        .col-1, .col-2, .col-3, .col-4 {
-            width: auto;
-        }
-    }
-   }
-
-   @media screen and (max-width: 425px) {
-    .last-news {display: flex;}
-    .client-container {display: none;}
-    .btn-search {
+  /* Applies New Setting, Styles and Positions to Windows that are at 425 Resolution */  
+  @media screen and (max-width: 425px) {
+    .last-news {display: flex;}  /* Converts Latest Columns into 1 Column */
+    .client-container {display: none;} /* Hides Client Logos */
+    .btn-search { /* Apply Style to Search Button */
         position: absolute;
         margin-left: 88%;
         margin-top: 1%;
@@ -821,10 +827,10 @@ button {
             color: black;
         }
     }
-    .r-container {
+    .r-container {  /* Changes the position of the Elements in Column to Reverse */
         align-items: flex-end;
         flex-direction: column-reverse;
-        .btn-menu {
+        .btn-menu { /* Aligns Menu Icon into the text Field */
             margin-left: auto;
             margin-right: 10px;
             margin-bottom: 10px;
@@ -834,13 +840,13 @@ button {
         form {.btn-search {background-color: #E5E5E5;} }
     }
     header {
-        img {
+        img { /* Applies Style to Images */
             position: absolute;
             width: 60%;
             padding: 10px;
         }
     }
-    input {
+    input { /* Allows the Text Field to expand further than its container */
         display: block;
         box-sizing: border-box;
         width: 425px;
@@ -850,18 +856,18 @@ button {
         background-color: #E5E5E5;
         border: groove;
     }
-    .row2 {
+    .row2 { /* Applies Style to Container */
         display: block;
         .sb-container {
             max-width: 77%;
         }
     }
-    .banner-container {
+    .banner-container { /* Applies Style to button */
         .content-container {
             button {width: 42%;}
         }
     }
-    .latest-container{
+    .latest-container{ /* Changes Container in Latest's from 2 Column to 1 */
         flex-direction: column;
         .latest-content {
             width: 90%;
@@ -869,7 +875,7 @@ button {
             margin-bottom: 5%;
         }
     }
-    .footer-container {
+    .footer-container { /* Applies Style to Footer Container */
         height: auto;
         font-size: unset;
         .col-4 {
@@ -879,29 +885,32 @@ button {
     }
    }
 
-   @media screen and (max-width: 375px) {
-       header {
+  /* Applies New Setting, Styles and Positions to Windows that are at 375 Resolution */ 
+  @media screen and (max-width: 375px) {
+       header { /* Repositions Logo in Header */
            img {padding-left: 50px;}
        }
-       input {width: 356px;}
+       input {width: 356px;} /* Changes width of Text Field */
        .btn-search {margin-left: 82%;}
        .banner-container {
-           .content-container {
+           .content-container { /* Changes width of Button */
                button {width: 48%;}
            }
        }
+       /* Changes width of Button */
        .footer-container {.col-4 {button {i {font-size: x-large;} width: 9.0625em;}}}
    }
 
-   @media screen and (max-width: 320px) {
-       input {width: 19em;}
-       header img {
+  /* Applies New Setting, Styles and Positions to Windows that are at 320 Resolution */ 
+  @media screen and (max-width: 320px) {
+       input {width: 19em;} /* Changes width of Text Field */
+       header img { /* Repositions Logo in Header */
         padding-left: 10px;
     }
-       .r-container .btn-menu {
+       .r-container .btn-menu { /* Applies changes */
             width: 19%;
         }
-        .row2 {.sb-container {max-width: 70%;}}
-        .banner-container {.content-container {button {width: 58%;}}}
-        .footer-container {.col-4 {button {width: 7.7025em}}}
+        .row2 {.sb-container {max-width: 70%;}} /* Changes width of Container */
+        .banner-container {.content-container {button {width: 58%;}}} /* Changes width of Button */
+        .footer-container {.col-4 {button {width: 7.7025em}}}  /* Changes width of Button */
    }
