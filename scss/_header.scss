@@ -1,0 +1,70 @@
+/*=============================================================================*/
+/* Header Area
+/*=============================================================================*/
+
+.h-container { /* Holds together all Header Elements in a Row */
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-evenly;
+    i { /* Adding Style to i element */
+        margin-right: 10px; 
+        font-size:20px;
+    }
+    form { /* Converts "Form" into a container */
+        margin-left: 25px;
+        display:flex; 
+        .btn-search { /* Adding Style to Button */
+            background-color: #999aa2;
+            width:62px;
+            &:hover{ /* Creates a Hovering Event */
+                background-color: #717277;
+            }
+        }
+        i {
+            margin-right: 0;
+        }
+    }
+}
+
+.r-container { /* Holds together all elements together in a Row */
+    display: flex; 
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.btn-contact { /* Creates a Style to Button */
+    width: 150px; 
+    background-color: #999aa2;
+    margin-left: 25px;
+    font-size: 18px;
+    &:hover{ /* Hover Event: Change Buttons Colour */
+        background-color: #717277;
+    }
+}
+
+.btn-support {
+    width: 150px;
+    background-color: #427fd3;
+    margin-left: 25px;
+    font-size: 18px;
+    &:hover{
+        background-color: #1d63c5;
+    }
+}
+
+.btn-menu { /* Creates a Style to Button (Just Displays Icon) */
+    background-color: #333544; 
+    margin-left: 25px;
+    width: 12%;
+    i {
+        display: block;
+        margin: auto;
+    }
+    &:hover{ /* Hover Event: Change Buttons Colour */
+        background-color: #262730;
+    }
+}
+/*=============================================================================*/
+/*=============================================================================*/

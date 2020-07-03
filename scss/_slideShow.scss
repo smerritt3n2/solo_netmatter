@@ -1,0 +1,32 @@
+  /*=============================================================================*/
+  /* Slideshow Area
+  /*=============================================================================*/
+
+  .sls-container { /* Holds together all Slideshow Elements + Applies Image as Background */
+    display: flex; 
+    height: 730px;
+    background: url(../img/slideshow1.jpeg) no-repeat center / cover;
+    margin-bottom: 2%;
+}
+
+.content-container { /* Holds together all Content Elements in a Column */
+    margin: auto 30px; 
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    button { /* Creates a Style to Button */
+        width: 200px; 
+        height: 50px;
+        background: #986DAF;
+        font-size: 15px;
+        margin-top: 25px;
+        &:hover{ /* Hover Event: Change Buttons Colour */
+            background-color: rgb(102, 70, 119);
+        }
+    }
+    i {margin-left: 18px;}
+    h1, p {margin: 10px 0px;}
+}
+  /*=============================================================================*/
+  /*=============================================================================*/

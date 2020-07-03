@@ -1,0 +1,121 @@
+  /*=============================================================================*/
+  /* Gallary Area
+  /*=============================================================================*/
+
+  .subject-container { /* Holds together all Gallary Elements */
+    display: flex; 
+    padding: 0.5%;
+    font-size: smaller;
+    i { /* Creates a Style to Icons */
+        background: #999aa2; 
+        padding: 20px;
+        border-radius: 50%;
+    }
+    h2 { /* Creates a Style to h2 Text */
+        color:#000000;
+    }
+    p { /* Creates a Style to Paragraphs */
+        color:#000000;
+    }
+    button { /* Creates a Style to Button */
+        padding: 4%;
+        font-size: 16px;
+    }
+    hr { /* Creates a Style to HR (Underlines) */
+        border: 2px solid #000000;
+        width: 30px;
+    }
+    .id-bs{ /* Provides Colour to Icon + Button */
+        i {background-color: #667F9D;}
+        button {background-color: #667F9D;}
+        &:hover { /* Hover Event: Changes Icon, Title, Text and Button Colour */
+            background-color: #667F9D;
+            cursor: pointer;
+            h2, p {color:#ffffff;}
+            hr {border: 2px solid #ffffff;}
+            button {background-color: #ffffff; color: #667F9D;}
+            i {background-color: #ffffff; color: #667F9D;}
+        }
+    }
+    .id-is{
+        i {background-color: #427FD3;}
+        &:hover {
+            background-color: #427FD3;
+            cursor: pointer;
+            h2, p {color:#ffffff;}
+            hr {border: 2px solid #ffffff;}
+            button {background-color: #ffffff; color: #427FD3;}
+            i {background-color: #ffffff; color: #427FD3;}
+        }
+    }
+    .id-dm{
+        i {background-color: #00CD76;}
+        button {background-color:#00CD76}
+        &:hover {
+            background-color: #00CD76;
+            cursor: pointer;
+            h2, p {color:#ffffff;}
+            hr {border: 2px solid #ffffff;}
+            button {background-color: #ffffff; color: #00CD76;}
+            i {background-color: #ffffff; color: #00CD76;}
+        }
+    }
+    .id-ts{
+        i {background-color: #DF4A45; transform: rotate(-45deg)}
+        button {background-color: #DF4A45}
+        &:hover {
+            background-color: #DF4A45;
+            cursor: pointer;
+            h2, p {color:#ffffff;}
+            hr {border: 2px solid #ffffff;}
+            button {background-color: #ffffff; color: #DF4A45;}
+            i {background-color: #ffffff; color: #DF4A45;}
+        }
+    }
+    .id-wd{
+        i {background-color: #986DAF;}
+        button {background-color: #986DAF}
+        &:hover {
+            background-color: #986DAF;
+            cursor: pointer;
+            h2, p {color:#ffffff;}
+            hr {border: 2px solid #ffffff;}
+            button {background-color: #ffffff; color: #986DAF;}
+            i {background-color: #ffffff; color: #986DAF;}
+        }
+    }
+    .id-cs{
+        i {background-color: #FF2E5B;}
+        button {background-color: #FF2E5B;}
+        &:hover {
+            background-color: #FF2E5B;
+            cursor: pointer;
+            h2, p {color:#ffffff;}
+            hr {border: 2px solid #ffffff;}
+            button {background-color: #ffffff; color: #FF2E5B;}
+            i {background-color: #ffffff; color: #FF2E5B;}
+        }
+    }
+  }
+
+  .sb-container{ /* Holds together all Elements + Applies Style to them*/
+    margin: 15px 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 43px -1px rgba(0,0,0,0.4);
+    border-radius: 3px;
+    border-style: groove;
+    border-width: 2px;
+  }
+
+  .row1 { /* Creates a Container that holds data in a row only */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .row2 { /* Creates a Container that holds data in a row only */
+    display: flex;
+    flex-direction: row;
+  }
+  /*=============================================================================*/
+  /*=============================================================================*/
