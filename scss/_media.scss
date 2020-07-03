@@ -50,7 +50,6 @@
         .col-4 {
             button { /* Changes Button Style */
                 height: 40px;
-                width: 148px;
                 i {font-size: large;}
             }
         }
@@ -59,13 +58,16 @@
 
   /* Applies New Setting, Styles and Positions to Windows that are at 985 Resolution */
   @media screen and (max-width: 768px) {
+        .btn-menu{width:4em}
         input {display: block;} /* Reveals Text Field */
         nav {display: none;} /* Hides Navigation bar with Dropdowns */
         .h-container {
             .r-container {
+                justify-content: none;
                 form { /* Completes border on Text Field */
                     margin: 0px;
                     border-left: solid;
+                    height: 3em;
                 }
             }
         }
@@ -80,6 +82,7 @@
        }
        .subject-container { /* Adjusts Elements to a Single Column in Gallary */
            margin: 0px auto;
+           button {width: none; padding: 0px 1em;}
            .row1 {display: block;}
        }
        .banner-container { /* Removes Images inside the Container */
@@ -96,16 +99,14 @@
             }
         }
         .footer-container { /* Adjusts Container, Col-4 + Button inside Footer elements */
-            height: 600px;
-            font-size: xx-large;
             .col-1, .col-2, .col-3, .col-4 {
                 width: auto;
             }
             .col-4 { /* Changes width/ height of buttons in Column 4 */
                 button {
-                    height: 60px;
-                    width: 145px;
-                    i {font-size: xx-large;}
+                    height: 4em;
+                    width: 10em;
+                    i {font-size: 2em;}
                 }
             }
         }
@@ -127,6 +128,7 @@
 
   /* Applies New Setting, Styles and Positions to Windows that are at 425 Resolution */  
   @media screen and (max-width: 425px) {
+    .h-container{img{width:14em;margin: 0.65em auto;}}
     .last-news {display: flex;}  /* Converts Latest Columns into 1 Column */
     .client-container {display: none;} /* Hides Client Logos */
     .btn-search { /* Apply Style to Search Button */
@@ -183,8 +185,7 @@
         flex-direction: column;
         .latest-content {
             width: 90%;
-            margin-top: 5%;
-            margin-bottom: 5%;
+            margin: 1em auto;
         }
     }
     .footer-container { /* Applies Style to Footer Container */
@@ -199,9 +200,7 @@
 
   /* Applies New Setting, Styles and Positions to Windows that are at 375 Resolution */ 
   @media screen and (max-width: 375px) {
-       header { /* Repositions Logo in Header */
-           img {padding-left: 50px;}
-       }
+      .h-container{img{margin: 0.6em auto;}}
        input {width: 356px;} /* Changes width of Text Field */
        .btn-search {margin-left: 82%;}
        .banner-container {
