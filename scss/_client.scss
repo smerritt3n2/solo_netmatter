@@ -14,19 +14,19 @@
 
   .busseys { /* Applies Images to Container background */
     width: 188px;height: 70px;
-    background: url(../img/clients/busseys_original.jpg) no-repeat;
+    background: url(../img/clients/busseys_original.png) no-repeat;
   }
   .crane {
     width: 287px;height: 70px;
-    background: url(../img/clients/crane_original.jpg) no-repeat;
+    background: url(../img/clients/crane_original.png) no-repeat;
   }
   .beat {
     width: 72px;height:70px;
-    background: url(../img/clients/beat_original.jpg) no-repeat;
+    background: url(../img/clients/beat_original.png) no-repeat;
   }
   .northern {
     width: 322px;height:70px;
-    background: url(../img/clients/northern_original.jpg) no-repeat;
+    background: url(../img/clients/northern_original.png) no-repeat;
   }
 
   /* Hover Event: Changes Background Image to New Image */
@@ -38,10 +38,14 @@
  .tooltip { /* Creates a Container + Spaces Elements Inside Evenly */
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     span {
         width: 220px;
     }
+  }
+
+  .miniTooltip {
+    left: -5.5em;
   }
   
   .tooltip .tooltiptext { /* Hides Container that Holds Text Content */

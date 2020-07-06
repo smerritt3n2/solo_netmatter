@@ -1,7 +1,7 @@
   /* Applies New Setting, Styles and Positions to Windows that are at 1440 Resolution */
   @media screen and (max-width: 1440px) {
     .dropdown-content { /* Adjusts Dropdown Position */
-        top: 20%;
+        z-index: 1000;
     } 
   }
 

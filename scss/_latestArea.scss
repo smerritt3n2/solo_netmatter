@@ -7,7 +7,7 @@
     flex-direction: row;
     background-image: linear-gradient(180deg, rgba(208,206,206,1) 0%, rgba(255, 255, 255,1) 34%);
     padding: 2% 0%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .latest-content { /* Holds together all Latest Elements within a Column + Applies a #000000 Colour to Elements */
@@ -50,7 +50,6 @@
     padding: 20px;
     border: groove;
     border-top: none;
-    height: 100%;
     font-size: smaller;
     h3{margin:0;}
     p {color:#000000;}
@@ -75,7 +74,8 @@
 }
 
 .posted-container { /* Creates a Container for Posted Data in a Row + */
-    display: flex; /* Applies a Style to Image/ Paragraph */
+    display: inline-flex; /* Applies a Style to Image/ Paragraph */
+    margin-bottom: 0.5em;
     img {width: 50px;height: 50px;border-radius: 40px;padding: 10px;}
     p {margin-left: 20px;}
 }

@@ -5,12 +5,13 @@
   .sls-container { /* Holds together all Slideshow Elements + Applies Image as Background */
     display: flex; 
     height: 730px;
-    background: url(../img/slideshow1.jpeg) no-repeat center / cover;
+    background: url(../img/slideshow1.png) no-repeat center / cover;
     margin-bottom: 2%;
 }
 
 .content-container { /* Holds together all Content Elements in a Column */
-    margin: auto 30px; 
+    margin: 30px;
+    align-self: center;  
     font-size: x-large;
     display: flex;
     flex-direction: column;
