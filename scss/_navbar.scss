@@ -2,145 +2,97 @@
 /* Navbar Area
 /*=============================================================================*/
 
-.n-container { /* Holds together all Navigational Bar elements */
-    padding: 0; 
-    margin: 0;
+nav { /* Holds together all Navigational Bar elements */
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
-    background: #333544;
-    padding-left: 45px;
-    padding-right: 45px;
-      i { /* Adding Style to i element */
-        display: block;
-        margin: auto;
-      }
-      ul { /* Creates a Style to Navigational Bar Elements */
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-      }
-       
-      li {
-        width: 10em;
-        display: block;
-        font-size: 1.2em;
-        border-left: 1px solid rgba(255,255,255,0.1);
-        border-right: 1px solid rgba(145, 111, 111, 0.25);
-      }
-      
-      li a {
-        display: flex;
-        flex-direction: column;
-        padding: 14px 16px;
-        text-decoration: none;
-        margin: auto;
-      } /*==============================================*/
+    height: 7em;
+        ul{
+            padding: 0;
+            list-style: none;
+            background: #333544;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        ul li{
+            display: inline-block;
+            line-height: 21px;
+            width: 12em;
+            border-left: 1px solid rgba(255,255,255,0.1);
+            border-right: 1px solid rgba(145, 111, 111, 0.25);
+        }
+        ul li a{
+            display: flex;
+            flex-direction: column;
+            padding: 20px 37px;
+            text-decoration: none;
+        }
+        ul li ul.dropdown{
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            width: 100%;
+        }
+        ul li:hover ul.dropdown{
+            display: flex;	/* Display the dropdown */
+            width: 100%;
+        }
+        .dropdown-size{
+            font-size: 14px;
+            li {
+                width: 20.8em;
+                height: 3.5em;
+                display: inline-flex;
+                justify-content: center;
+                border:none;
+            }
+            a{
+                padding: 0;
+                margin-top:auto;
+                margin-bottom: auto;
+            }
+        }
+        .dropdown-size li:before { /* Before Dropdowns are Generated, In Container create the symbol - */
+            content: "-";
+            margin-right: 1em;
+            margin-top:auto;
+            margin-bottom: auto;
+    }
 
 } 
 
-/* Creates a Colour Class for Dropdown-Menus to use */
-.dd-web-design {background-color: rgb(111, 57, 139);}
-.dd-it-support {background-color: rgb(50, 99, 167);}
-.dd-telecoms-services {background-color: rgb(170, 42, 38);}
-.dd-bespoke-software {background-color: rgb(64, 89, 119);}
-.dd-digital-marketing {background-color: rgb(1, 117, 69);}
-.dd-cyber-security {background-color: rgb(196, 25, 62);}
-
 .code { /* Gives Icons a Colour and Changes there Colour on Hover Events */
-    i {
-        color: #986DAF;
-    }
-    &:hover{
-        i {color:#ffffff;}
-        background-color:#986DAF;
-    }
+    i {color: #986DAF;}
+    &:hover{i {color:#ffffff;}background-color:#986DAF;}
+    & ul li {background-color: rgb(111, 57, 139);} /* Applies Colour to Drop down elements */
 }
 
-.desktop {
-    i {
-        color: #427fd3;
-    }
-    &:hover{
-        i {color:#ffffff;}
-        background-color:#427fd3;
-    }
+.desktop {i {color: #427fd3;}
+    &:hover{i {color:#ffffff;}background-color:#427fd3;}
+    & ul li {background-color: rgb(50, 99, 167);}
 }
 
-.phone {
-    i {
-        color: #DF4A45;
-        transform: rotate(-45deg);
-    }
-    &:hover{
-        i {color:#ffffff;}
-        background-color:#DF4A45;
-    }
+.phone {i {color: #DF4A45;transform: rotate(-45deg);}
+    &:hover{i {color:#ffffff;}background-color:#DF4A45;}
+    & ul li {background-color: rgb(170, 42, 38);}
 }
 
-.keypad {
-    i {
-        color: #667F9D;
-    }
-    &:hover{
-        i {color:#ffffff;}
-        background-color:#667F9D;
-    }
+.keypad {i {color: #667F9D;}
+    &:hover{i {color:#ffffff;}background-color:#667F9D;}
+    & ul li {background-color: rgb(64, 89, 119);}
 }
 
-.signal {
-    i {
-        color: #00CD76;
-    }
-    &:hover{
-        i {color:#ffffff;}
-        background-color:#00CD76;
-    }
+.signal {i {color: #00CD76;}
+    &:hover{i {color:#ffffff;}background-color:#00CD76;}
+    & ul li {background-color: rgb(1, 117, 69);}
 }
 
-.shield {
-
-    i {
-        color: #FF2E5B;
-    }
-    &:hover{
-        i {color:#ffffff;}
-        background-color:#FF2E5B;
-    }
+.shield {i {color: #FF2E5B;}
+    &:hover{i {color:#ffffff;}background-color:#FF2E5B;}
+    & ul li {background-color: rgb(196, 25, 62);}
 }
-
-.dropdown { /* Tells Child Element to NOT create new Resources, Use Current Resources */
-    display: contents;
-  }
-  
-  .dropdown-content { /* Creates a Style for Dropdown-Menus & Hides Itself */
-    display: none;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-size: 12px;
-    width: 100%;
-    top: 15em;
-    left: 0;
-    li:before { /* Before Dropdowns are Generated, In Container create the symbol - */
-        content: "-";
-        margin: auto;
-        padding: 1em;
-    }
-    li {
-        border: none;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-  }
-  
-  .dropdown:hover .dropdown-content { /* Hover Event: Reveal Itself */
-    display: block;
-  }
   /*=============================================================================*/
   /*=============================================================================*/
