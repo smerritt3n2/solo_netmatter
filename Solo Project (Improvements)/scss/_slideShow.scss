@@ -19,10 +19,12 @@
     button { /* Creates a Style to Button */
         width: 200px; 
         height: 50px;
-        background: #986DAF;
+        background: var(--purple-color);
+        background-color: #926fb1; /* A Fallback Program if the variable Function doesn't work */
         font-size: 15px;
         margin-top: 25px;
         &:hover{ /* Hover Event: Change Buttons Colour */
+            background-color:var(--purple-hover);
             background-color: #79539a;
         }
     }

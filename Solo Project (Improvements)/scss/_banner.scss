@@ -6,21 +6,25 @@
     display:flex;
     height: auto;
     background: url(../img/banner.png) no-repeat center / cover;
-    background-color: #333544;
+    background-color:var(--banner-background);
+    background-color:#333544;
     .content-container { /* Holds together all Content inside Banner Elements */
       font-size: medium;
       width:40%;
       button { /* Creates a Style to Button */
           color:#000000;
+          background-color:var(--white-color);
           background-color:#fff;
           width: 30%;
           margin: 5% 0px;
           &:hover{ /* Hover Event: Changes Button Colour */
-              background-color: #dcdcdc;
+              background-color:var(--banner-btn);
+              background-color:#dcdcdc;
           }
       }
       i {
-          color:#000000;
+          color:var(--black-color);
+          color:#000;
       }
     }
 }

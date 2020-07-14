@@ -11,7 +11,8 @@ nav { /* Holds together all Navigational Bar elements */
         ul{
             padding: 0;
             list-style: none;
-            background: #333544;
+            background:var(--nav-background);
+            background: #333544; /* A Fallback Program if the variable Function doesn't work */
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -20,8 +21,8 @@ nav { /* Holds together all Navigational Bar elements */
             display: inline-block;
             line-height: 21px;
             width: 12em;
-            border-left: 1px solid #ffffff1a;
-            border-right: 1px solid #00000040;
+            border-left: 1px solid var(--nav-border-left);
+            border-right: 1px solid var(--nav-border-right);
         }
         ul li a{
             display: flex;
@@ -64,35 +65,35 @@ nav { /* Holds together all Navigational Bar elements */
 
 } 
 
-.code { /* Gives Icons a Colour and Changes there Colour on Hover Events */
-    i {color: #986DAF;}
-    &:hover{i {color:#ffffff;}background-color:#986DAF;}
-    & ul li {background-color: #79539a;} /* Applies Colour to Drop down elements */
+.code { /* Gives Icons a Colour and Changes there Colour on Hover Events, by calling the variable element */
+    i {color: var(--purple-color); color: #926fb1;}
+    &:hover{i {color:var( --white-color); color: #fff;}background-color:var(--purple-color);background-color:#926fb1;}
+    & ul li {background-color: var(--purple-hover);background-color:#79539a;} /* Applies Colour to Drop down elements */
 }
 
-.desktop {i {color: #427fd3;}
-    &:hover{i {color:#ffffff;}background-color:#427fd3;}
-    & ul li {background-color: #286abd;}
+.desktop {i {color: var(--blue-color);color:#427fd3}
+    &:hover{i {color:var(--white-color);color: #fff;}background-color:var(--blue-color);background-color: #427fd3;}
+    & ul li {background-color: var(--blue-hover);background-color:#286abd;}
 }
 
-.phone {i {color: #DF4A45;transform: rotate(-45deg);}
-    &:hover{i {color:#ffffff;}background-color:#DF4A45;}
-    & ul li {background-color: #de093f;}
+.phone {i {color: var(--red-color);transform: rotate(-45deg);color:#DF4A45;}
+    &:hover{i {color:var(--white-color);color:#fff;}background-color:var(--red-color);background-color:#DF4A45;}
+    & ul li {background-color: var(--red-hover);background-color:#de093f;}
 }
 
-.keypad {i {color: #667F9D;}
-    &:hover{i {color:#ffffff;}background-color:#667F9D;}
-    & ul li {background-color: #526781;}
+.keypad {i {color: var(--grey-color);color:#667F9D;}
+    &:hover{i {color:#ffffff;}background-color:var(--grey-color);background-color:#667F9D;}
+    & ul li {background-color: var(--grey-hover);background-color:#526781;}
 }
 
-.signal {i {color: #00CD76;}
-    &:hover{i {color:#ffffff;}background-color:#00CD76;}
-    & ul li {background-color: #25a25a;}
+.signal {i {color: var(--green-color);color:#00CD76;}
+    &:hover{i {color:var(--white-color);}background-color:var(--green-color);background-color:#00CD76;}
+    & ul li {background-color: var(--green-hover);background-color:#25a25a;}
 }
 
-.shield {i {color: #FF2E5B;}
-    &:hover{i {color:#ffffff;}background-color:#FF2E5B;}
-    & ul li {background-color: #de093f;}
+.shield {i {color:var(--darkred-color);color:#FF2E5B;}
+    &:hover{i {color:var(--white-color);}background-color:var(--darkred-color);background-color:#FF2E5B;}
+    & ul li {background-color:var(--darkred-hover);background-color:#de093f;}
 }
   /*=============================================================================*/
   /*=============================================================================*/

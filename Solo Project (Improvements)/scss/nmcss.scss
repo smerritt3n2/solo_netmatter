@@ -31,6 +31,7 @@ button {
     cursor: pointer;
 }
 
+  @import "variables"; /* Gathers variables from Partial */
   @import "header"; /* Gathers Settings from Partial */
   @import "navbar"; /* Gathers Settings from Partial */
   @import "slideShow"; /* Gathers Settings from Partial */

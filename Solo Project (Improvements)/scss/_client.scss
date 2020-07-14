@@ -51,7 +51,7 @@
   .tooltip .tooltiptext { /* Hides Container that Holds Text Content */
     visibility: hidden;
     background-color: #333544;
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
     padding: 4%;
     position: absolute; /* Position the Container Above Element */
@@ -59,7 +59,7 @@
     bottom: 100%;
     font-size: small;
     hr {
-        border: 2px solid #fff;
+        border: 2px solid var(--white-color);
         width: 30px;
     }
   }

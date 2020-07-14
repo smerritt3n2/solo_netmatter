@@ -33,8 +33,8 @@
   }
 
   /* Creates a Colour Class for Social Buttons to use */
-  .facebook:hover {background-color: #3b5998;}
-  .twitter:hover {background-color: #00acee;}
-  .in:hover {background-color: #0e76a8;}
+  .facebook:hover {background-color: var(--facebook-color);background-color:#3b5998;}
+  .twitter:hover {background-color: var(--twitter-color);background-color:#00acee;}
+  .in:hover {background-color: var(--in-color);background-color:#0e76a8;}
   /*=============================================================================*/
   /*=============================================================================*/
