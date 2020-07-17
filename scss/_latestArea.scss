@@ -5,7 +5,7 @@
   .latest-container { /* Holds together all Latest Elements + Adds Image as Background */
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(180deg, rgba(208,206,206,1) 0%, rgba(255, 255, 255,1) 34%);
+    background-image: linear-gradient(180deg, rgba(208,206,206,1) 0%, rgba(255, 255, 255,1) 34%); /* Sets fading background colour for elements */
     padding: 2% 0%;
     justify-content: space-around;
 }
@@ -14,13 +14,15 @@
   display: flex;
   flex-direction: column;
   width: 29%;
-  background-color:#ffffff;
-    hr, b {color: #000000;}
+  background-color:var(--white-color);
+  background-color:#fff;
+    hr, b {color:var(--black-color);color:#000;}
 }
 
 .latest-img { /* Creates a Container that Holds Image Elements + */
     overflow:hidden; /* Hides Elements if they go outside the Container */
-    background:#ffffff;
+    background:var(--white-color);
+    background:#fff;
     direction: rtl;
     height: 100%;
     img { /* Creates a Style to Images + Applies an Animation to its Elements */
@@ -52,7 +54,7 @@
     border-top: none;
     font-size: smaller;
     h3{margin:0;}
-    p {color:#000000;}
+    p {color:var(--black-color);color:#000;}
     hr {margin-top: 20px;margin-bottom: 20px;}
     button { /* Creates a Style to Button */
       margin-top: 20px;
@@ -68,9 +70,9 @@
       }
     }
     /* Creates a Colour Class for News Icon to use */
-    .dd-bespoke-software:hover {background-color: rgb(43, 65, 92);}
-    .dd-it-support:hover {background-color: rgb(40, 82, 141);}
-    .dd-web-design:hover {background-color: rgb(96, 41, 124);}
+    .dd-bespoke-software:hover {background-color: var(--grey-color);background-color:#667F9D;}
+    .dd-it-support:hover {background-color: var(--blue-color);background-color:#427fd3;}
+    .dd-web-design:hover {background-color: var(--purple-color);background-color:#926fb1;}
 }
 
 .posted-container { /* Creates a Container for Posted Data in a Row + */
@@ -89,11 +91,13 @@
 }
 
 .peopleNews {
-  color: #4183d7;
+  color: var(--blue-color);
+  color:#427fd3;
 }
 
 .PolicyNews {
-  color:rgb(64, 89, 119);;
+  color:var(--grey-color);
+  color:#667F9D;
 }
 /*=============================================================================*/
 /*=============================================================================*/

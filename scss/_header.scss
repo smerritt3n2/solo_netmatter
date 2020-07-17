@@ -15,10 +15,12 @@
         margin-left: 25px;
         display:flex; 
         .btn-search { /* Adding Style to Button */
-            background-color: #999aa2;
+            background-color: var(--search-btn-color);
+            background-color: #999aa2; /* A Fallback Program if the variable Function doesn't work */
             width:62px;
             &:hover{ /* Creates a Hovering Event */
-                background-color: #717277;
+                background-color: var(--search-btn-hover);
+                background-color: #717277; /* A Fallback Program if the variable Function doesn't work */
             }
         }
         i {
@@ -38,26 +40,31 @@
 
 .btn-contact { /* Creates a Style to Button */
     width: 150px; 
-    background-color: #999aa2;
+    background-color: var(--search-btn-color);
+    background-color: #999aa2; /* A Fallback Program if the variable Function doesn't work */
     margin-left: 25px;
     font-size: 18px;
     &:hover{ /* Hover Event: Change Buttons Colour */
-        background-color: #717277;
+        background-color: var(--search-btn-hover);
+        background-color: #717277; /* A Fallback Program if the variable Function doesn't work */
     }
 }
 
 .btn-support {
     width: 150px;
-    background-color: #427fd3;
+    background-color: var(--support-btn-color);
+    background-color: #427fd3; /* A Fallback Program if the variable Function doesn't work */
     margin-left: 25px;
     font-size: 18px;
     &:hover{
-        background-color: #1d63c5;
+        background-color: var(--support-btn-hover);
+        background-color: #1d63c5; /* A Fallback Program if the variable Function doesn't work */
     }
 }
 
 .btn-menu { /* Creates a Style to Button (Just Displays Icon) */
-    background-color: #333544; 
+    background-color: var(--menu-btn-color);
+    background-color: #333544; /* A Fallback Program if the variable Function doesn't work */
     margin-left: 25px;
     padding-top: 0.5em;
     i {
@@ -65,7 +72,8 @@
         margin: auto;
     }
     &:hover{ /* Hover Event: Change Buttons Colour */
-        background-color: #262730;
+        background-color: var(--menu-btn-hover);
+        background-color: #262730; /* A Fallback Program if the variable Function doesn't work */
     }
 }
 /*=============================================================================*/

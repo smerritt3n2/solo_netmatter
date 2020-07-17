@@ -8,6 +8,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="img/clients/favicon.ico">
         <meta charset="UTF-8">
+        <!--============================ jQuery Sidebar =====================================-->
+        <link href="js/sidebar/dist/zeynep.css" rel="stylesheet">
+        <link href="js/sidebar/examples/css/base.css" rel="stylesheet">
+        <link href="js/sidebar/examples/css/right.css" rel="stylesheet">
+        <link href="css/nmcss.css" rel="stylesheet">
+        <!--=================================================================================-->
+        <!--========================== jQuery Slideshow =====================================-->
+        <link rel="stylesheet" href="js/slideshow/src/css/jquery.jdSlider.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="js/slideshow/dist/js/jquery.jdSlider-latest.min.js"></script>
+        <!--=================================================================================-->
+        <!--=================================================================================-->
+        <!--========================== Javascript Cookies ===================================-->
+        <link rel="stylesheet" href="js/cookies.js">
+        <!--=================================================================================-->
     </head>
     <body>
 <!--==============================================================================================================-->
@@ -26,7 +41,30 @@
                         <input type="text" placeholder="Search...">
                         <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                    <button class="btn-menu" type="button"><i class="fas fa-bars"></i>MENU</button>
+                    <button class="btn-menu btn-open" type="button"><i class="fas fa-bars"></i>MENU</button>
+
+                    <div class="zeynep right">
+                            <ul>
+                              <li><a href="a">TRANING</a></li>
+                              <li class="sub-side"><a href="#">&#8811; WEB DEVELOPER COURSE</a></li>
+                              <li><a href="#">EVENTS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; BUSINESS AUTOMATION SEMINAR</a></li>
+                              <li><a href="#">OUR COMPANT</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR CULTURE</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR TEAM</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR CAREERS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR BENEFITS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR GREAT YARMOUTH OFFICE</a></li>
+                              <li><a href="#">OUR WORK</a></li>
+                              <li class="sub-side"><a href="#">&#8811; CASE STUDIES</a></li>
+                              <li><a href="#">OUR KNOWLEDGE</a></li>
+                              <li class="sub-side"><a href="#">&#8811; GUIDES</a></li>
+                              <li class="sub-side"><a href="#">&#8811; NEWS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; INSIGHTS</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="zeynep-overlay"></div>
                 </div>
         </header>
         <nav>
@@ -93,13 +131,73 @@
                 </li>
             </ul>
             </nav>
-            <div class="sls-container">
-                <div class="content-container">
-                    <h1>WEB DESIGN</h1>
-                    <p>For business looking to make a strong<br />and effect first impresson.</p>
-                    <button type="button">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
+            <section class="jd-slider slider2">
+                    <div class="slide-inner">
+                        <ul class="slide-area">
+                            <li>
+                                <img src="img/slideshow/slideshow1.png">
+                                <div class="content-container">
+                                    <h1>WEB DESIGN</h1>
+                                    <p>For business looking to make a strong<br />and effect first impresson.</p><br>
+                                    <button type="button" class="wb-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/slideshow/slideshow2.png">
+                                <div class="content-container">
+                                    <h1>IT SUPPORT</h1>
+                                    <p>Fast and cost-effective IT support<br />service for your business</p><br>
+                                    <button type="button" class="is-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/slideshow/slideshow3.png">
+                                <div class="content-container">
+                                    <h1>TELECOMS SERVICES</h1>
+                                    <p>A new approach to connectivity, see how<br />we can help your business.</p><br>
+                                    <button type="button" class="ts-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/slideshow/slideshow4.png">
+                                <div class="content-container">
+                                    <h1>BESPOKE SOFTWARE</h1>
+                                    <p>Bring your business together<br />with solutions that grow with you.</p><br>
+                                    <button type="button" class="bs-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/slideshow/slideshow5.png">
+                                <div class="content-container">
+                                    <h1>DIGITAL MARKETING</h1>
+                                    <p>Generating you new business through<br />results-driven marketing acrivities.</p><br>
+                                    <button type="button" class="dm-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/slideshow/slideshow6.png">
+                                <div class="content-container">
+                                    <h1>CYBER SECURITY</h1>
+                                    <p>Keeping businesses and their customers<br />sensitive information protected.</p><br>
+                                    <button type="button" class="cs-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="prev" href="#">
+                            <i class="fas fa-angle-left fa-2x"></i>
+                        </a>
+                        <a class="next" href="#">
+                            <i class="fas fa-angle-right fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="controller">
+                        <a class="auto" href="#">
+                            <i class="fas fa-play fa-xs"></i>
+                            <i class="fas fa-pause fa-xs"></i>
+                        </a>
+                        <div class="indicate-area"></div>
+                    </div>
+                </section>
 <!--==============================================================================================================-->
 <!--==============================================================================================================-->
 
@@ -164,7 +262,7 @@
                 </div>
             </div>
             <div class="banner-container">
-                <div class="content-container">
+                <div class="content-container2">
                     <h1>NETMATERS</h1>
                     <p>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondham, Norfolk.</p>
                     <p>Founded in 2008, we work with buisness from a variety of industries to gain new prospects existing leads and further grow their sales.</p>
@@ -236,32 +334,32 @@
 <!--==============================================================================================================-->
             <div class="client-container">
                 <div class="busseys tooltip">
-                    <span class="tooltiptext">
+                    <div class="tooltiptext">
                         <h2>Busseys</h2>
                         <hr>
                         <p>One of the UK's leading Ford dealerships.</p>
-                    </span>
+                    </div>
                 </div>
                 <div class="crane tooltip">
-                    <span class="tooltiptext">
+                    <div class="tooltiptext">
                         <h2>Crane Garden Builders</h2>
                         <hr>
                         <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>
-                    </span>
+                    </div>
                 </div>
                 <div class="beat tooltip">
-                    <span class="tooltiptext miniTooltip">
+                    <div class="tooltiptext miniTooltip">
                         <h2>Beat</h2>
                         <hr>
                         <p>The UK's eating discorder charity founded in 1989.</p>
-                    </span>
+                    </div>
                 </div>
                 <div class="northern tooltip">
-                    <span class="tooltiptext">
+                    <div class="tooltiptext">
                         <h2>Northern Diver</h2>
                         <hr>
                         <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>
-                    </span>
+                    </div>
                 </div>
             </div>
             <footer class="footer-container">
@@ -314,5 +412,34 @@
                 </div>
 <!--==============================================================================================================-->
 <!--==============================================================================================================-->
+
+<!--========================== Sideshow Function ====================================-->
+        <script src="js/slideshow/dist/js/jquery.js"></script>
+        <script src="js/slideshow/dist/js/jquery.jdSlider-latest.min.js"></script>
+        <script src="js/slideshow.js"></script>
+<!--=================================================================================-->
+<!--============================== Sidebar Function =================================-->
+        <script src="js/sidebar/dist/zeynep.js"></script>
+        <script src="js/sidebar.js"></script>
+<!--=================================================================================-->
+<!--============================== Sidebar Function =================================-->
+<script>
+    (function() {
+        if (!localStorage.getItem('cookieconsent')) {
+            document.body.innerHTML += '\
+            <div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#000;color:#FFF;text-align:center;width:100%;z-index:99999;">\
+                This site uses cookies. By continuing to use this website, you agree to their use. \
+                <a href="#" style="color:#CCCCCC;">I Understand</a>\
+            </div>\
+            ';
+            document.querySelector('.cookieconsent a').onclick = function(e) {
+                e.preventDefault();
+                document.querySelector('.cookieconsent').style.display = 'none';
+                localStorage.setItem('cookieconsent', true);
+            };
+        }
+    })();
+</script>
+<!--=================================================================================-->
     </body>
 </html>

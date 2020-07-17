@@ -10,7 +10,7 @@ html {
 
 /* Sets main colour to #ffffff + Coverts all text-font to "Roboto" */
 * {
-    color:#ffffff;
+    color:#fff;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -31,7 +31,9 @@ button {
     cursor: pointer;
 }
 
+  @import "variables"; /* Gathers variables from Partial */
   @import "header"; /* Gathers Settings from Partial */
+  @import "sidebar"; /* Gathers Settings from Partial */
   @import "navbar"; /* Gathers Settings from Partial */
   @import "slideShow"; /* Gathers Settings from Partial */
   @import "gallary"; /* Gathers Settings from Partial */

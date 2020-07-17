@@ -6,7 +6,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/clients/favicon.ico">
         <meta charset="UTF-8">
+        <!--============================ jQuery Sidebar =====================================-->
+        <link href="../js/sidebar/dist/zeynep.css" rel="stylesheet">
+        <link href="../js/sidebar/examples/css/base.css" rel="stylesheet">
+        <link href="../js/sidebar/examples/css/right.css" rel="stylesheet">
+        <link href="../css/nmcss.css" rel="stylesheet">
+        <!--=================================================================================-->
+        <!--========================== jQuery Slideshow =====================================-->
+        <link rel="stylesheet" href="../js/slideshow/src/css/jquery.jdSlider.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="../js/slideshow/dist/js/jquery.jdSlider-latest.min.js"></script>
+        <!--=================================================================================-->
     </head>
     <body>
         <!--================================ Header Elements ================================-->
@@ -19,7 +31,33 @@
                         <input type="text" placeholder="Search...">
                         <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                    <button class="btn-menu" type="button"><i class="fas fa-bars"></i>MENU</button>
+
+        <!--============================== Side-Bar Elements ================================-->
+                    <button class="btn-menu btn-open" type="button"><i class="fas fa-bars"></i>MENU</button>
+
+                    <div class="zeynep right">
+                            <ul>
+                              <li><a href="a">TRANING</a></li>
+                              <li class="sub-side"><a href="#">&#8811; WEB DEVELOPER COURSE</a></li>
+                              <li><a href="#">EVENTS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; BUSINESS AUTOMATION SEMINAR</a></li>
+                              <li><a href="#">OUR COMPANT</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR CULTURE</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR TEAM</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR CAREERS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR BENEFITS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; OUR GREAT YARMOUTH OFFICE</a></li>
+                              <li><a href="#">OUR WORK</a></li>
+                              <li class="sub-side"><a href="#">&#8811; CASE STUDIES</a></li>
+                              <li><a href="#">OUR KNOWLEDGE</a></li>
+                              <li class="sub-side"><a href="#">&#8811; GUIDES</a></li>
+                              <li class="sub-side"><a href="#">&#8811; NEWS</a></li>
+                              <li class="sub-side"><a href="#">&#8811; INSIGHTS</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="zeynep-overlay"></div>
+        <!--=================================================================================-->
                 </div>
         </header>
         <!--=================================================================================-->
@@ -92,13 +130,170 @@
         <!--=================================================================================-->
 
         <!--============================== Slideshow Elements ===============================-->
-            <div class="sls-container">
-                <div class="content-container">
-                    <h1>WEB DESIGN</h1>
-                    <p>For business looking to make a strong<br />and effect first impresson.</p><br>
-                    <button type="button">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+            <section class="jd-slider slider2">
+                <div class="slide-inner">
+                    <ul class="slide-area">
+                        <li>
+                            <img src="../img/slideshow/slideshow1.png">
+                            <div class="content-container">
+                                <h1>WEB DESIGN</h1>
+                                <p>For business looking to make a strong<br />and effect first impresson.</p><br>
+                                <button type="button" class="wb-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../img/slideshow/slideshow2.png">
+                            <div class="content-container">
+                                <h1>IT SUPPORT</h1>
+                                <p>Fast and cost-effective IT support<br />service for your business</p><br>
+                                <button type="button" class="is-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../img/slideshow/slideshow3.png">
+                            <div class="content-container">
+                                <h1>TELECOMS SERVICES</h1>
+                                <p>A new approach to connectivity, see how<br />we can help your business.</p><br>
+                                <button type="button" class="ts-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../img/slideshow/slideshow4.png">
+                            <div class="content-container">
+                                <h1>BESPOKE SOFTWARE</h1>
+                                <p>Bring your business together<br />with solutions that grow with you.</p><br>
+                                <button type="button" class="bs-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../img/slideshow/slideshow5.png">
+                            <div class="content-container">
+                                <h1>DIGITAL MARKETING</h1>
+                                <p>Generating you new business through<br />results-driven marketing acrivities.</p><br>
+                                <button type="button" class="dm-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../img/slideshow/slideshow6.png">
+                            <div class="content-container">
+                                <h1>CYBER SECURITY</h1>
+                                <p>Keeping businesses and their customers<br />sensitive information protected.</p><br>
+                                <button type="button" class="cs-btn">FIND OUT MORE<i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="prev" href="#">
+                        <i class="fas fa-angle-left fa-2x"></i>
+                    </a>
+                    <a class="next" href="#">
+                        <i class="fas fa-angle-right fa-2x"></i>
+                    </a>
                 </div>
-            </div>
+                <div class="controller">
+                    <a class="auto" href="#">
+                        <i class="fas fa-play fa-xs"></i>
+                        <i class="fas fa-pause fa-xs"></i>
+                    </a>
+                    <div class="indicate-area"></div>
+                </div>
+            </section>
         <!--=================================================================================-->
+
+        <!--============================== Sidebar Function =================================-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="../js/sidebar/dist/zeynep.js"></script>
+        
+        <script>
+        $(function() {
+            // init zeynepjs side menu
+            var zeynep = $('.zeynep').zeynep({
+            opened: function () {
+                // log
+                console.log('the side menu opened')
+            },
+            closed: function () {
+                // log
+                console.log('the side menu closed')
+            }
+            })
+
+            // dynamically bind 'closing' event
+            zeynep.on('closing', function () {
+            // log
+            console.log('this event is dynamically binded')
+            })
+
+            // handle zeynepjs overlay click
+            $('.zeynep-overlay').on('click', function () {
+            zeynep.close()
+            })
+
+            // open zeynepjs side menu
+            $('.btn-open').on('click', function () {
+            zeynep.open()
+            })
+        })
+        </script>
+        <!--=================================================================================-->
+
+        <!--========================== Sideshow Function ====================================-->
+        <script src="../js/slideshow/dist/js/jquery.js"></script>
+        <script src="../js/slideshow/dist/js/jquery.jdSlider-latest.min.js"></script>
+        <script>
+            window.onload = function () {
+                $('.slider1').jdSlider();
+                $('.slider2').jdSlider({
+                    wrap: '.slide-inner',
+                    isAuto: true,
+                    isLoop: true
+                });
+                $('.slider3').jdSlider({
+                    wrap: '.slide-inner',
+                    slideShow: 2,
+                    slideToScroll: 2,
+                    isLoop: false,
+                    responsive: [{
+                        viewSize: 768,
+                        settings: {
+                            slideShow: 1,
+                            slideToScroll: 1
+                        }
+                    }]
+                });
+                $('.slider3-2').jdSlider({
+                    wrap: '.slide-inner',
+                    slideShow: 2,
+                    slideToScroll: 1,
+                    isLoop: true,
+                    responsive: [{
+                        viewSize: 768,
+                        settings: {
+                            slideShow: 1
+                        }
+                    }]
+                });
+                $('.slider3-3').jdSlider({
+                    wrap: '.slide-inner',
+                    slideShow: 2,
+                    slideToScroll: 2,
+                    isLoop: true,
+                    responsive: [{
+                        viewSize: 768,
+                        settings: {
+                            slideShow: 1,
+                            slideToScroll: 1
+                        }
+                    }]
+                });
+                $('.slider4').jdSlider({
+                    wrap: '.slide-inner',
+                    isSliding: false,
+                    isAuto: true,
+                    isLoop: true,
+                    isDrag: false
+                });
+            };
+        </script>
+    <!--=================================================================================-->
     </body>
 </html>

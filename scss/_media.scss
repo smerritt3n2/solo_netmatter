@@ -29,7 +29,7 @@
         }
     }
     .banner-container {
-        .content-container { /* Adjust Font Sizes + Button Sizes */
+        .content-container2 { /* Adjust Font Sizes + Button Sizes */
             font-size: larger;
             width: 90%;
             button {
@@ -87,7 +87,7 @@
        }
        .banner-container { /* Removes Images inside the Container */
            background-image: none;
-        .content-container { /* Adjusts Content + Buttons inside Container */
+        .content-container2 { /* Adjusts Content + Buttons inside Container */
             font-size: larger;
             width: 90%;
             text-align: left;
@@ -138,7 +138,7 @@
         max-width: 10%;
         height: 5%;
         i {
-            color: #000000;
+            color: #000;
         }
     }
     .r-container {  /* Changes the position of the Elements in Column to Reverse */
@@ -177,7 +177,7 @@
         }
     }
     .banner-container { /* Applies Style to button */
-        .content-container {
+        .content-container2 {
             button {width: 42%;}
         }
     }
@@ -204,7 +204,7 @@
        input {width: 356px;} /* Changes width of Text Field */
        .btn-search {margin-left: 82%;}
        .banner-container {
-           .content-container { /* Changes width of Button */
+           .content-container2 { /* Changes width of Button */
                button {width: 48%;}
            }
        }
@@ -222,6 +222,6 @@
             width: 19%;
         }
         .row2 {.sb-container {max-width: 70%;}} /* Changes width of Container */
-        .banner-container {.content-container {button {width: 58%;}}} /* Changes width of Button */
+        .banner-container {.content-container2 {button {width: 58%;}}} /* Changes width of Button */
         .footer-container {.col-4 {button {width: 7.7025em}}}  /* Changes width of Button */
    }
